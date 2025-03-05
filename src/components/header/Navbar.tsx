@@ -78,10 +78,10 @@ export default function Navbar() {
           initial={{ x: "-100%" }}
           animate={{ x: isOpen ? 0 : "-100%" }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="fixed top-0 left-0 h-screen w-[80%] bg-black bg-opacity-95 flex flex-col items-center justify-start py-6 shadow-lg md:hidden"
+          className="fixed top-0 left-0 h-screen w-[85%] bg-gray-950/97 backdrop-blur-xl  flex flex-col items-center justify-start py-6 shadow-lg md:hidden"
         >
           {/* Mobile Logo */}
-          <div className="p-5 bg-black w-full mx-auto ">
+          <div className="p-5  w-full mx-auto ">
             <Link href="/" onClick={() => setIsOpen(false)}>
               <img
                 src="/EX_TECHNOLOGY_LOGO-01.png"
@@ -90,7 +90,7 @@ export default function Navbar() {
               />
             </Link>
             {/* ✅ Mobile Menu Items */}
-            <ul className="text-white text-lg space-y-4">
+            <ul className="text-white text-lg space-y-6">
               {["Home", "About", "Services", "Portfolio", "Contact"].map(
                 (item) => (
                   <li key={item}>
