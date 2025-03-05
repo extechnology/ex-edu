@@ -12,7 +12,7 @@ export function AboutUs() {
             <p className="pb-5 text-center text-2xl font-semibold text-transparent bg-clip-text bg-[linear-gradient(90deg,_purple_30%,_cyan_60%,_indigo_100%)]">
               Unleash The Power Of
             </p>
-            <h1 className="text-4xl font-semibold text-black dark:text-white">
+            <h1 className="text-4xl font-semibold text-gray-800 dark:text-white">
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
                 Modern Technologies
               </span>

@@ -73,45 +73,39 @@ export default function Navbar() {
         </div>
 
         {/* ✅ Mobile Menu Dropdown */}
-        {isOpen && (
-          <div
-            ref={menuRef}
-            className="fixed inset-0 bg-black   bg-opacity-95 flex flex-col items-center justify-start py-6 transition-all duration-300 md:hidden"
-          >
-            {/* Mobile Logo */}
+        <motion.div
+          ref={menuRef}
+          initial={{ x: "-100%" }}
+          animate={{ x: isOpen ? 0 : "-100%" }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className="fixed top-0 left-0 h-screen w-64 bg-black bg-opacity-95 flex flex-col items-center justify-start py-6 shadow-lg md:hidden"
+        >
+          {/* Mobile Logo */}
+          <div className="p-5 bg-black w-full mx-auto ">
             <Link href="/" onClick={() => setIsOpen(false)}>
               <img
                 src="/EX_TECHNOLOGY_LOGO-01.png"
                 alt="Logo"
-                className="w-20"
+                className="w-20 mb-6"
               />
             </Link>
             {/* ✅ Mobile Menu Items */}
-            <motion.ul
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -100 }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="text-white bg-black p-10 text-lg space-y-4 rounded-b-xl shadow-xl"
-            >
+            <ul className="text-white text-lg space-y-4">
               {["Home", "About", "Services", "Portfolio", "Contact"].map(
                 (item) => (
-                  <ul>
-                    <li key={item}>
-                      <Link
-                        href={`/${item.toLowerCase()}`}
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {item}
-                      </Link>
-                    </li>
-                  </ul>
+                  <li key={item}>
+                    <Link
+                      href={`/${item.toLowerCase()}`}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item}
+                    </Link>
+                  </li>
                 )
               )}
-            </motion.ul>
-            ;
+            </ul>
           </div>
-        )}
+        </motion.div>
       </nav>
     </div>
   );

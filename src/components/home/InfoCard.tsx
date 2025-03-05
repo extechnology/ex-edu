@@ -9,7 +9,7 @@ const content = [
     description:
       "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full  flex items-center justify-center text-gray-800 dark:text-white">
         <Image
           src="https://img.freepik.com/premium-vector/education-innovative-online-e-learning-internet-technology-concept-virtual-screen-robotic-hand-touching-digital-interface_127544-420.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"
           width={300}
@@ -72,7 +72,7 @@ const content = [
 
 export default function InfoCard() {
   return (
-    <div className="p-10">
+    <div className="md:p-10">
       <StickyScroll content={content} />
     </div>
   );
