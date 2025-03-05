@@ -78,7 +78,7 @@ export default function Navbar() {
           initial={{ x: "-100%" }}
           animate={{ x: isOpen ? 0 : "-100%" }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="fixed top-0 left-0 h-screen w-64 bg-black bg-opacity-95 flex flex-col items-center justify-start py-6 shadow-lg md:hidden"
+          className="fixed top-0 left-0 h-screen w-[80%] bg-black bg-opacity-95 flex flex-col items-center justify-start py-6 shadow-lg md:hidden"
         >
           {/* Mobile Logo */}
           <div className="p-5 bg-black w-full mx-auto ">
