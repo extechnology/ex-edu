@@ -28,7 +28,7 @@ export function Services() {
             width={500}
             height={500}
             alt="linear demo image"
-            className="absolute lg:-right-[30%] grayscale filter md:-bottom-20 bottom-10 object-contain rounded-2xl"
+            className="absolute lg:-right-[30%] grayscale filter md:-bottom-20 bottom-6 object-contain rounded-2xl"
           />
         </WobbleCard>
         <WobbleCard containerClassName="col-span-1 min-h-[300px]">
@@ -54,7 +54,7 @@ export function Services() {
             width={500}
             height={500}
             alt="linear demo image"
-            className="absolute grayscale  md:-right-[40%] lg:-right-[18%] md:-bottom-38 bottom-10 object-contain rounded-2xl"
+            className="absolute grayscale  md:-right-[40%] lg:-right-[18%] md:-bottom-38 -bottom-8 object-contain rounded-2xl"
           />
         </WobbleCard>
       </div>

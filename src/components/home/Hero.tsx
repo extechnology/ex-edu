@@ -7,7 +7,7 @@ function Hero() {
   const containerRef = useRef(null);
 
   return (
-    <div className="h-[100vh] w-full dark:bg-slate-900 bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+    <div className="md:h-[100vh] h-[80vh] w-full dark:bg-slate-900 bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-[#D3D3D3] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 

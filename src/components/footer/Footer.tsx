@@ -69,7 +69,7 @@ function Footer() {
     <div className="bg-[#FAF9F6] dark:bg-slate-900 py-5 md:py-7 border-t border-gray-300 dark:border-gray-700">
       <div className="grid grid-cols-1 md:grid-cols-3 justify-center space-y-3 md:space-y-0">
         <div className="content-center">
-          <h1 className="text-gray-500 text-center ">© Extechnology</h1>
+          <h1 className="text-gray-500 text-center ">© ExEdu</h1>
         </div>
         <div>
           <FloatingDock items={links} />
