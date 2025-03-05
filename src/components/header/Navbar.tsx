@@ -90,13 +90,14 @@ export default function Navbar() {
               />
             </Link>
             {/* ✅ Mobile Menu Items */}
-            <ul className="text-white text-lg space-y-6">
+            <ul className="text-white text-lg space-y-6 pt-4">
               {["Home", "About", "Services", "Portfolio", "Contact"].map(
                 (item) => (
                   <li key={item}>
                     <Link
                       href={`/${item.toLowerCase()}`}
                       onClick={() => setIsOpen(false)}
+                      className="p-4 shadow-md rounded-md "
                     >
                       {item}
                     </Link>

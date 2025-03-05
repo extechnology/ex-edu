@@ -7,7 +7,7 @@ import {
   IconBrandLinkedin,
   IconBrandInstagram,
   IconBrandX,
-  IconBrandPinterest
+  IconBrandPinterest,
 } from "@tabler/icons-react";
 
 function Footer() {
@@ -72,12 +72,15 @@ function Footer() {
           <h1 className="text-gray-500 text-center ">© ExEdu</h1>
         </div>
         <div>
-          <FloatingDock items={links} />
+          <FloatingDock mobileClassName="hidden" items={links} />
         </div>
         <div className="text-gray-400 flex gap-5 justify-center content-center items-center">
           <p>Terms of Use</p>
           <p>Privacy Policy</p>
         </div>
+      </div>
+      <div>
+        <FloatingDock desktopClassName="md:hidden" items={links} />
       </div>
     </div>
   );
