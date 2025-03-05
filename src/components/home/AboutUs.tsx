@@ -21,7 +21,7 @@ export function AboutUs() {
         }
       >
         <Image
-          src="/6108768.jpg"
+          src="/technology.jpg"
           alt="hero"
           height={720}
           width={1400}
