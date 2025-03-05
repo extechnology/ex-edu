@@ -63,13 +63,13 @@ export default function Navbar() {
             </button>
           )}
           <GoogleTranslateWidget />
-        </div>
 
-        {/* ✅ Mobile Menu Button */}
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-          </button>
+          {/* ✅ Mobile Menu Button */}
+          <div className="md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+              {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* ✅ Mobile Menu Dropdown */}
